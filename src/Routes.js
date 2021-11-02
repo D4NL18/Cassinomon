@@ -1,18 +1,19 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import DiceGame from "./Views/DiceGame";
 import Login from './Views/Login/login'
 
 function Router() {
-    return (
-      <div>
-    <BrowserRouter>
+  return (
+    <>
+      <BrowserRouter>
         <Switch>
-            <Route exact path="/" component={Login}></Route>
+          <Route exact path="/" component={Login}></Route>
+          <Route exact path="/dice" component={DiceGame}></Route>
         </Switch>
-    </BrowserRouter>
-      </div>
-    );
-  }
-  
-  export default Router;
-  
+      </BrowserRouter>
+    </>
+  );
+}
+
+export default Router;
