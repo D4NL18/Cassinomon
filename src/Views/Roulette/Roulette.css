@@ -4,21 +4,21 @@
     height: 100vh;
 }
 .Nav {
-    background-color: green;
+    background-color: #B22B00;
     width: 100%;
-    height: 7%;
+    height: 10%;
 }
 .big-box {
-    background-color: red;
+    background-color: #E04F00;
     width: 100%;
-    height: 93%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 .roulette-box {
-    background-color: grey;
+    background-color: #313131;
     width: 85%;
     height: 80%;
     display: flex;
@@ -26,13 +26,13 @@
     align-items: center;
 }
 .roulette {
-    background-color: blue;
+    background-color: #C4C4C4;
     width: 600px;
     height: 600px;
     border-radius: 100%;
 }
 .boxes-roulette {
-    background-color: sandybrown;
+    background-color: #C4C4C4;
     width: 20%;
     height: 80%;
     display: flex;
@@ -40,9 +40,9 @@
     justify-content: space-evenly;
 }
 .bet-box-roulette {
-    background-color: pink;
+     /* background-color: pink;  */
     width: 100%;
-    height: 40%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,6 +62,47 @@
     border-width: 1px;
     margin: 10px;
 }
+
+.bet-box-color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bet-bot-color-text {
+    font-size: 24px;
+    font-weight: 400;
+    width: 100%;
+    
+}
+.balls-roulette {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.yellow-ball-roulette {
+    width: 50px;
+    height: 50px;
+    background-color: #F9D800;
+    margin: 10%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.blue-ball-roulette {
+    width: 50px;
+    height: 50px;
+    background-color: #18394A;
+    margin: 10%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 .bet-box-roulette-button {
     margin: 10px;
     background: linear-gradient(180deg, #E04F00 1.56%, #964540 100%);
@@ -76,12 +117,23 @@
     text-decoration: none;
 }
 .history-box-roulette {
-    background-color: sienna;
+    /* background-color: sienna; */
     width: 100%;
     height: 40%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.history-box-roulette-text {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-right: 10px
 }
 .friends-list {
     background-color: purple;
-    width: 15%;
+    /* width: 15%; */
+    width: 0;
     height: 100%;
 }
