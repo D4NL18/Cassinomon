@@ -18,7 +18,7 @@ export const MainPage = styled.div`
  * @param {color}: Muda a cor do fundo.
  */
 
-export const NavbarStyled = styled.nav`
+export const NavbarStyled = styled.header`
     min-height: 9vh;
     width: 100vw;
     background-color: ${props => props.color ? props.color : '#fff'};
@@ -34,12 +34,10 @@ export const NavbarStyled = styled.nav`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 26%;
     }
     .nav-buttons {
         display: flex;
         align-items: center;
-        width: 20%;
         justify-content: space-around;
     }
 
@@ -68,6 +66,7 @@ export const DivDinheiro = styled.div`
 
     padding: 4px;
     border-radius: 9px;
+    margin-left: 10px;
 
     display: flex;
     align-items: center;
@@ -84,6 +83,8 @@ export const NavBtn = styled.button`
     min-width: 100px;
     height: 1.75rem;
     background-color: #E7EFF6;
+
+    margin: 0 7px;
 
     padding: 4px;
     border-radius: 9px;

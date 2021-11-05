@@ -9,13 +9,13 @@ const Navbar = (props) => {
                 <TitleSystem>Cassinomon</TitleSystem>
                 <DivDinheiro>$ 9K</DivDinheiro>
             </div>
-            <div className="nav-buttons">
+            <nav className="nav-buttons">
                 <NavBtn>Login</NavBtn>
                 <NavBtn>Registre-se</NavBtn>
                 <IconButton>
                     <DehazeIcon style={{color: 'white'}}/>
                 </IconButton>
-            </div>
+            </nav>
         </NavbarStyled>
     )
 }
