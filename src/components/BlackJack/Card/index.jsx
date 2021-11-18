@@ -23,7 +23,7 @@ const Card = ({ value, suit, hidden }) => {
       return (
         <div className="card">
           <div className={getColor()}>
-            <h1 className="value">{value}</h1>
+            <h1 className="valueCard">{value}</h1>
             <h1 className="suit">{suit}</h1>
           </div>
         </div>

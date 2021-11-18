@@ -5,7 +5,10 @@ import "./styles.css";
 const BlackJack = () => {
     return (
         <div className="entire-page">
-            <Game/>
+            <div className="navbar" />
+            <div className="game-div">
+                <Game />
+            </div>
         </div>
     );
 };
