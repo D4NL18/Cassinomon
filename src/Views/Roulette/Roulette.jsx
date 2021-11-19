@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Roulette.css'
-import Button from '@mui/material/Button';
 import { Wheel } from 'react-custom-roulette'
+import ButtonStart from '../../Components/ButtonStart/ButtonStart';
 
 
 const data = [
@@ -111,9 +111,7 @@ export default function Roulette() {
                                             }} style={{ border: (blue) ? '2px solid black' : '' }} />
                                     </div>
                                 </div>
-                                <Button className="bet-box-roulette-button" onClick={randomizeNumber}>
-                                    <p className="bet-bot-roulette-button-text">Start</p>
-                                </Button>
+                                <ButtonStart onClick={randomizeNumber} color="linear-gradient(180deg, #E04F00 1.56%, #964540 100%)"/>
                             </div>
                             <div className="history-box-roulette">
                                 <div className="history-box-roulette-text">
