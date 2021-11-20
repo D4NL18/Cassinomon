@@ -1,15 +1,17 @@
 .entire-page {
     width: 100vw;
     min-height: 100vh;
-    background-color: #94D5FF;
+    background-color: #03396C;
 }
 .navbar {
-    background-color: #3CB2FF;
+    background-color: #011F4B;
     width: 100%;
     height: 10%;
 }
-.game-div {
+.content-div {
     height: 90%;
     justify-content: end;
+    padding-left: 5;
+    padding-right: 5;
 }
 
