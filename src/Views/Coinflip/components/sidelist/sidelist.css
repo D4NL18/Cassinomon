@@ -1,0 +1,13 @@
+.sidelist_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: #CCA129;
+    border-top: 2px solid #FFE9AB;
+}
+
+.sidelist_icon {
+    margin: 0 10px;
+}

@@ -19,6 +19,7 @@
     align-items: center;
     height: 60%;
     width: 12%;
+    margin-right: 45%;
     border-radius: 10px;
     background-color: #E7EFF6;
 }
@@ -28,4 +29,8 @@
     justify-content: space-between;
     align-items: center;
     width: 15%;
+}
+
+.header_menu {
+    margin: 0 30px;
 }
