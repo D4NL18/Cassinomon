@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Roulette from './Views/Roulette/Roulette'
 import Profile from './Views/Perfil/Profile'
 import Dice from './Views/Dice/Dice'
+import Home from './Views/Home/Home'
 
 function Router() {
     return (
@@ -11,7 +12,8 @@ function Router() {
     <BrowserRouter>
         <Switch>
             {/* <Route exact path="/" component={Login}></Route> */}
-            <Route exact path="/" component={Dice}></Route>
+            <Route exact path="/" component={Home}></Route>
+            <Route exact path="/Dice" component={Dice}></Route>
             <Route exact path="/Roulette" component={Roulette}></Route>
             <Route exact path="/Profile" component={Profile}></Route>
         </Switch>

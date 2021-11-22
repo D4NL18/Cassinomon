@@ -1,0 +1,47 @@
+.entire-component {
+    width: 260px;
+    height: 260px;
+    margin: 70px;
+    text-decoration: none;
+}
+
+.backgroundButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    width: 260px;
+    height: 260px;
+    
+}
+
+.imgBox {
+    display: flex;
+    background-color: #E7EFF6;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.img {
+    width: 176px;
+    height: 176px;
+}
+
+.titleDiv {
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+}
+
+.titleText {
+    margin: 20px;
+    color: white;
+}

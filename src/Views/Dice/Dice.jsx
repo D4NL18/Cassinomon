@@ -8,7 +8,6 @@ import './Dice.css'
 
 export default function DicePage() {
 
-    const [prizeNumber, setPrizeNumber] = useState(0);
     const [bet, setBet] = useState(0);
     const [amount, setAmount] = useState(10);
     const [one, setOne] = useState(true)
@@ -17,7 +16,6 @@ export default function DicePage() {
     const [four, setFour] = useState(false)
     const [five, setFive] = useState(false)
     const [six, setSix] = useState(false)
-    const [roll, setRoll] = useState(false)
 
     const handleInputChangeBet = (e) => {
         setBet(e.target.value)
@@ -44,42 +42,7 @@ export default function DicePage() {
         }
     }
 
-    const setNewAmount = () => {
-        if (prizeNumber === 1 && one) {
-            setAmount((bet*6)  + amount)
-            
-        } else {
-            setAmount(amount - bet)
-        }
-        if (prizeNumber === 2 && two) {
-            setAmount((bet*6)  + amount)
-        } else {
-            setAmount(amount - bet)
-        }
-        if (prizeNumber === 3 && three) {
-            setAmount((bet*6)  + amount)
-        } else {
-            setAmount(amount - bet)
-        }
-        if (prizeNumber === 4 && four) {
-            setAmount((bet*6) + amount)
-        } else {
-            setAmount(amount - bet)
-        }
-        if (prizeNumber === 5 && five) {
-            setAmount((bet*6) + amount)
-        } else {
-            setAmount(amount - bet)
-        }
-        if (prizeNumber === 6 && six) {
-            setAmount((bet*6)  + amount)
-        } else {
-            setAmount(amount - bet)
-        }
-        //alert(`Seu novo saldo é de ${amount}`)
-        console.log(amount)
-        
-    }
+   
 
 
     return (
@@ -158,7 +121,7 @@ export default function DicePage() {
                         <div className="diceBox" ref={diceRef}>
                             <Dice size={200}
                                 onRoll={(value) => {
-                                    if (value === 1 && one || value === 2 && two || value === 3 && three ||value === 4 && four ||value === 5 && five ||value === 6 && six) {
+                                    if ((value === 1 && one) || (value === 2 && two) || (value === 3 && three) || (value === 4 && four) || (value === 5 && five) || (value === 6 && six)) {
                                         setAmount(amount+bet*6)
                                     } else {
                                         setAmount(amount-bet)

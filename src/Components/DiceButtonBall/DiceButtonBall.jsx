@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './DiceButtonBall.css'
 
 export default function DiceButtonBall(props) {
