@@ -1,6 +1,6 @@
 .entire-page {
     width: 100vw;
-    min-height: 100vh;
+    height: 110vh;
     background-color: #94D5FF;
 }
 .navbar {
@@ -9,7 +9,7 @@
     height: 10%;
 }
 .game-div {
-    height: 90%;
+    height: 90% !important;
     justify-content: end;
 }
 

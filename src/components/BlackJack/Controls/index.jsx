@@ -33,7 +33,7 @@ const Controls = ({ balance, gameState, buttonState, betEvent, hitEvent, standEv
   }
 
   const getControls = () => {
-    if (gameState === 0) {
+    if (gameState === "bet") {
       return (
         <div className="controlsContainer">
           <div className="betContainer">

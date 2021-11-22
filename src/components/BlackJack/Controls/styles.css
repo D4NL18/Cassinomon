@@ -11,7 +11,7 @@
     margin: 0 0.5em;
     padding: 0 1em;
     width: 40%;
-    background: black;
+    background: #e67b7b;
     border: 5px solid white;
     border-radius: 15px;
     box-shadow: 0px 1px 10px rgb(0, 0, 0);
@@ -27,7 +27,7 @@
     padding: 0;
     border: 0;
     outline: 0;
-    background: black;
+    background: #e67b7b;
     color: white;
   }
   
@@ -41,8 +41,8 @@
     padding: 0;
     border: 0;
     outline: 0;
-    background: black;
-    color: red;
+    background: #e67b7b;
+    color: black;
   }
   
   .input::-webkit-inner-spin-button, 

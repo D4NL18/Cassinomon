@@ -4,16 +4,25 @@ import Cyndaquil from "../../assets/Totodile.svg";
 
 
 const Card = (props) => {
-    const { bgColor, image, name, description } = props;
- 
+    const { image, name, description, type } = props;
+    const getType = () => {
+        if (type === "fire") {
+            return "red";
+        } else if (type === "water") {
+            return "blue";
+        } else if (type === "leaf") {
+            return "green";
+        } else if (type === "eletric") {
+            return "yellow";
+        }
+    }
     return (
         <div
             style={
                 {
-                    backgroundColor: bgColor,
-                    height: 200,
+                    backgroundColor: getType(),
+                    height: 250,
                     width: 200,
-                    justifyContent: "center",
                     textAlign: "center",
                     padding: 15,
                 }}
@@ -21,7 +30,14 @@ const Card = (props) => {
             <Typography variant="h5">
                 {name}
             </Typography>
-            <image src={Cyndaquil} height={30} w={30} /> 
+            <div
+                style={{
+                    backgroundColor:"white",
+                    height:"40%",
+                    width:"80%",
+                }}>
+                <image src={Cyndaquil} height={30} width={30} />
+            </div>
             <Typography
                 variant="h7"
             >

@@ -4,7 +4,10 @@ import Controls from './Controls';
 import Hand from './Hand';
 import jsonData from '../../resources/deck.json';
 
-const Game = () => {
+const Game = (props) => {
+
+  const { balance, setBalance } = props;
+
   const GameState = {
     bet: "bet",
     init: "init",
@@ -19,16 +22,16 @@ const Game = () => {
   }
 
   const Message = {
-    bet : 'Place a Bet!',
-    hitStand : 'Hit or Stand?',
-    bust : 'Bust!',
-    userWin : 'You Win!',
-    dealerWin : 'Dealer Wins!',
-    tie : 'Tie!'
+    bet: 'Place a Bet!',
+    hitStand: 'Hit or Stand?',
+    bust: 'Bust!',
+    userWin: 'You Win!',
+    dealerWin: 'Dealer Wins!',
+    tie: 'Tie!'
   }
 
   const data = JSON.parse(JSON.stringify(jsonData.cards));
-  const [deck, setDeck]= useState(data);
+  const [deck, setDeck] = useState(data);
 
   const [userCards, setUserCards] = useState([]);
   const [userScore, setUserScore] = useState(0);
@@ -38,7 +41,6 @@ const Game = () => {
   const [dealerScore, setDealerScore] = useState(0);
   const [dealerCount, setDealerCount] = useState(0);
 
-  const [balance, setBalance] = useState(100);
   const [bet, setBet] = useState(0);
 
   const [gameState, setGameState] = useState(GameState.bet);

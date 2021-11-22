@@ -7,25 +7,25 @@ import "./styles.css";
 
 const cards = [
     {
-        bgColor: "yellow",
+        type: "eletric",
         image: Cyndaquil,
         name: "Cyndaquil",
         description: "Pokemon de fogo brabissimo, um dos iniciais mais balas que tem"
     },
     {
-        bgColor: "red",
+        type: "fire",
         image: Cyndaquil,
         name: "Cyndaquil",
         description: "Pokemon de fogo brabissimo, um dos iniciais mais balas que tem"
     },
     {
-        bgColor: "green",
+        type: "leaf",
         image: Cyndaquil,
         name: "Cyndaquil",
         description: "Pokemon de fogo brabissimo, um dos iniciais mais balas que tem"
     },
     {
-        bgColor: "blue",
+        type: "water",
         image: Cyndaquil,
         name: "Cyndaquil",
         description: "Pokemon de fogo brabissimo, um dos iniciais mais balas que tem"
@@ -55,11 +55,12 @@ const Inventory = () => {
                         display: "flex",
                         flexWrap: "wrap",
                         justifyContent: "space-between",
+                        paddingTop: 40,
                     }}
                 >
                     {cards.map((pokemon, index) => (
                         <Card
-                            bgColor={pokemon.bgColor}
+                            type={pokemon.type}
                             name={pokemon.name}
                             description={pokemon.description}
                             image={pokemon.image}
