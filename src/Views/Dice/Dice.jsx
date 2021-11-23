@@ -17,6 +17,15 @@ export default function DicePage() {
     const [five, setFive] = useState(false)
     const [six, setSix] = useState(false)
 
+    // const faces = [
+    //     "https://i.imgur.com/lFR77WI.png",
+    //     "https://i.imgur.com/3opesH2.png",
+    //     "https://i.imgur.com/hlPpQ2V.png",
+    //     "https://i.imgur.com/Gja8Chq.png",
+    //     "https://i.imgur.com/jl6zjma.png",
+    //     "https://i.imgur.com/Qj7vjKB.png",
+    // ]
+
     const handleInputChangeBet = (e) => {
         setBet(e.target.value)
     }

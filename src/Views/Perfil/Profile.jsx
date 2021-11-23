@@ -1,4 +1,5 @@
 import React from 'react'
+import CoinflipImg from '../../Images/coinflip.png'
 import './Profile.css'
 
 export default function Profile() {
@@ -7,7 +8,7 @@ export default function Profile() {
         <>
             <div className="entire-page">
                 <div className="nav" />
-                <div className="background">
+                <div className="background-profile">
                     <div className="descricao">
                         <div className="foto-div">
                             <div className="img" />
@@ -19,14 +20,14 @@ export default function Profile() {
 
                     </div>
                     <div className="destaques-div" >
-                        <div className="destaque-pequeno" style={{backgroundColor:"#60A848"}}>
-                            <div className="pokemon" />
+                        <div className="destaque-pequeno" style={{ backgroundColor: "#60A848" }}>
+                            <img className="pokemon" src={CoinflipImg} />
                         </div>
-                        <div className="destaque-grande" style={{backgroundColor:"#F86000"}}>
-                            <div className="pokemon" />
+                        <div className="destaque-grande" style={{ backgroundColor: "#F86000" }}>
+                            <img className="pokemon" src={CoinflipImg} />
                         </div>
-                        <div className="destaque-pequeno" style={{backgroundColor:"#94D5FF"}}>
-                            <div className="pokemon" />
+                        <div className="destaque-pequeno" style={{ backgroundColor: "#94D5FF" }}>
+                            <img className="pokemon" src={CoinflipImg} />
                         </div>
                     </div>
                 </div>

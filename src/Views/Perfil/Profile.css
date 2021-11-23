@@ -10,7 +10,7 @@
     height: 10%;
 }
 
-.background {
+.background-profile {
     background-color: #03396C;
     width: 100%;
     height: 90%;
@@ -34,6 +34,7 @@
     justify-content: flex-start;
     height: 80%;
     width: 30%;
+    
 }
 
 .img {
@@ -45,6 +46,8 @@
 .nome {
     font-size: 36px;
     color: white;
+    font-family: 'PRESS START 2P';
+    font-weight: 300;
 }
 
 .biografia {
@@ -52,6 +55,8 @@
     flex-wrap: wrap;
     margin: 0px;
     color: white;
+    font-family: 'PRESS START 2P';
+    font-weight: 100;
 }
 
 .destaques-div {
