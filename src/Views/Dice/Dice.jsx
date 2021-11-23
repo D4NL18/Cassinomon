@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ButtonStart from '../../Components/ButtonStart/ButtonStart';
 import Dice from 'react-dice-roll'
 import DiceButtonBall from '../../Components/DiceButtonBall/DiceButtonBall'
+import Header from '../../Components/Header/Header'
 import './Dice.css'
 
 
@@ -31,7 +32,7 @@ export default function DicePage() {
     }
 
     const diceRef = React.useRef(null);
-    
+
     const onRoll = () => {
         if (diceRef && diceRef.current) {
             console.log(diceRef.current.style.pointerEvents);
@@ -51,14 +52,14 @@ export default function DicePage() {
         }
     }
 
-   
+
 
 
     return (
         <>
             <div className="entire-page">
-                <div className="nav" />
-                <div className="background">
+                <Header color="#417231" />
+                <div className="backgroundDice">
                     <div className="mainBox">
                         <div className="betBox">
                             <div className="numberSelection">
@@ -131,9 +132,9 @@ export default function DicePage() {
                             <Dice size={200}
                                 onRoll={(value) => {
                                     if ((value === 1 && one) || (value === 2 && two) || (value === 3 && three) || (value === 4 && four) || (value === 5 && five) || (value === 6 && six)) {
-                                        setAmount(amount+bet*6)
+                                        setAmount(amount + bet * 6)
                                     } else {
-                                        setAmount(amount-bet)
+                                        setAmount(amount - bet)
                                     }
                                     console.log(amount)
                                 }}

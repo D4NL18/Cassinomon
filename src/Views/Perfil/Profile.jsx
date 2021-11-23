@@ -1,5 +1,6 @@
 import React from 'react'
 import CoinflipImg from '../../Images/coinflip.png'
+import Header from '../../Components/Header/Header'
 import './Profile.css'
 
 export default function Profile() {
@@ -7,7 +8,7 @@ export default function Profile() {
     return (
         <>
             <div className="entire-page">
-                <div className="nav" />
+            <Header color="#011F4B"/>
                 <div className="background-profile">
                     <div className="descricao">
                         <div className="foto-div">
