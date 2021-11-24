@@ -1,0 +1,13 @@
+import React from 'react'
+import Header from '../../Components/Header/Header'
+
+export default function Registro() {
+    return(
+        <>
+            <div className="entire-page">
+                <Header />
+                
+            </div>
+        </>
+    )
+}
