@@ -1,7 +1,6 @@
-import { getThemeProps } from '@material-ui/system'
 import './ButtonLoginRegister.css'
 
-export default function(props) {
+export default function ButtonLoginRegister(props) {
     return(
         <>
         <a href={`/${props.type}`} className="entire-button">

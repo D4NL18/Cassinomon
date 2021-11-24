@@ -22,13 +22,13 @@ export default function Profile() {
                     </div>
                     <div className="destaques-div" >
                         <div className="destaque-pequeno" style={{ backgroundColor: "#60A848" }}>
-                            <img className="pokemon" src={CoinflipImg} />
+                            <img className="pokemon" src={CoinflipImg} alt="Coinflip"/>
                         </div>
                         <div className="destaque-grande" style={{ backgroundColor: "#F86000" }}>
-                            <img className="pokemon" src={CoinflipImg} />
+                            <img className="pokemon" src={CoinflipImg} alt="Coinflip" />
                         </div>
                         <div className="destaque-pequeno" style={{ backgroundColor: "#94D5FF" }}>
-                            <img className="pokemon" src={CoinflipImg} />
+                            <img className="pokemon" src={CoinflipImg} alt="Coinflip" />
                         </div>
                     </div>
                 </div>

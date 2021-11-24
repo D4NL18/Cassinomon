@@ -16,7 +16,7 @@ function Router() {
             {/* <Route exact path="/" component={Login}></Route> */}
             <Route exact path="/" component={Home}></Route>
             <Route exact path="/Login" component={Login}></Route>
-            <Route exact path="/Register" component={Register}></Route>
+            <Route exact path="/Registro" component={Register}></Route>
             <Route exact path="/Dice" component={Dice}></Route>
             <Route exact path="/Roulette" component={Roulette}></Route>
             <Route exact path="/Profile" component={Profile}></Route>

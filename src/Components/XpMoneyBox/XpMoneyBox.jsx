@@ -7,7 +7,7 @@ export default function XpMoneyBox(props) {
     return(
         <>
         <div className="entire-box">
-            <h2 className="textXpMoneyBox">{(props.type == "Saldo") ? `$ ${saldo}` : `Exp ${xp}`}</h2>
+            <h2 className="textXpMoneyBox">{(props.type === "Saldo") ? `$ ${saldo}` : `Exp ${xp}`}</h2>
         </div>
         </>
     )
