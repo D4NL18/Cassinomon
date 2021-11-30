@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
-
+import "./styles.css"
 
 const Card = (props) => {
     const { image, name, description, type } = props;
@@ -24,13 +24,14 @@ const Card = (props) => {
                     width: 200,
                     textAlign: "center",
                     padding: 15,
+                    borderRadius: 10,
                 }}
         >
             <Typography variant="h5">
                 {name}
             </Typography>
             {image ?
-                <img src={image} height="40%" width="80%" alt={name} />
+                <img src={image} className="pokemon-image" height="40%" width="80%" alt={name} />
                 :
                 <div
                     style={{
