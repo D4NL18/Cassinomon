@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import LobbyButton from '../../Components/LobbyButton/LobbyButton'
 import BlackjackImg from '../../Images/blackjack.png'
 import RoletaImg from '../../Images/roleta.png'
@@ -12,6 +12,7 @@ export default function Home() {
 
     return (
         <>
+        
             <div className="entire-page">
                 <Header color="#011F4B" />
                 <div className="background">
