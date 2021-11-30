@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './Roulette.css'
-import Button from '@mui/material/Button';
 import { Wheel } from 'react-custom-roulette'
+import ButtonStart from '../../Components/ButtonStart/ButtonStart';
+import Header from '../../Components/Header/Header'
 
 
 const data = [
@@ -49,12 +50,12 @@ export default function Roulette() {
 
     const randomizeNumber = () => {
         const newPrizeNumber = Math.floor(Math.random() * data.length)
-        if(amount >= bet) {
-        setPrizeNumber(newPrizeNumber)
-        setMustSpin(true)
-        }else if(amount < bet){
+        if (amount >= bet) {
+            setPrizeNumber(newPrizeNumber)
+            setMustSpin(true)
+        } else if (amount < bet) {
             alert(`Saldo insuficiente. Sua aposta deve ser de, no max, ${amount} pontos`)
-        }else if(bet <= 0) {
+        } else if (bet <= 0) {
             alert(`Sua aposta deve ser maior que 0`)
         }
     }
@@ -62,11 +63,11 @@ export default function Roulette() {
     const handleInputChangeBet = (e) => {
         setBet(e.target.value)
     }
- 
+
     return (
         <>
             <div className="entire-page">
-                <div className="Nav" />
+                <Header color="#B22B00" />
                 <div className="big-box">
                     <div className="roulette-box">
                         <Wheel
@@ -77,12 +78,12 @@ export default function Roulette() {
                             textColors={['#ffffff']}
                             onStopSpinning={() => {
                                 setMustSpin(false)
-                                if((prizeNumber % 2 === 0 && yellow) || (prizeNumber % 2 !== 0 && blue)) {
+                                if ((prizeNumber % 2 === 0 && yellow) || (prizeNumber % 2 !== 0 && blue)) {
                                     setAmount(amount + bet)
-                                    alert(`Seu novo saldo é ${parseInt(amount)+parseInt(bet)}`)
-                                }else {
+                                    alert(`Seu novo saldo é ${parseInt(amount) + parseInt(bet)}`)
+                                } else {
                                     setAmount(amount - bet)
-                                    alert(`Seu novo saldo é ${parseInt(amount)-parseInt(bet)}`)
+                                    alert(`Seu novo saldo é ${parseInt(amount) - parseInt(bet)}`)
                                 }
                                 setBet(0)
                             }}
@@ -92,7 +93,7 @@ export default function Roulette() {
                                 <div className="bet-box-roulette-text">
                                     Quanto deseja apostar?
                                 </div>
-                                <input className="bet-box-roulette-input" onChange={handleInputChangeBet} value={bet}/>
+                                <input className="bet-box-roulette-input" onChange={handleInputChangeBet} value={bet} />
                                 <div className="bet-box-color">
                                     <div className="bet-bot-color-text">
                                         Selecione uma cor:
@@ -111,9 +112,7 @@ export default function Roulette() {
                                             }} style={{ border: (blue) ? '2px solid black' : '' }} />
                                     </div>
                                 </div>
-                                <Button className="bet-box-roulette-button" onClick={randomizeNumber}>
-                                    <p className="bet-bot-roulette-button-text">Start</p>
-                                </Button>
+                                <ButtonStart onClick={randomizeNumber} color="linear-gradient(180deg, #E04F00 1.56%, #964540 100%)" />
                             </div>
                             <div className="history-box-roulette">
                                 <div className="history-box-roulette-text">
