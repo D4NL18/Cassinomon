@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import LobbyButton from '../../Components/LobbyButton/LobbyButton'
+import LobbyButton from '../../components/LobbyButton/LobbyButton'
 import BlackjackImg from '../../Images/blackjack.png'
 import RoletaImg from '../../Images/roleta.png'
 import DiceImg from '../../Images/dice.png'

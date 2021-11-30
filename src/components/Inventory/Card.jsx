@@ -15,6 +15,8 @@ const Card = (props) => {
             return "#F6BD20";
         }
     }
+
+    
     return (
         <div
             style={

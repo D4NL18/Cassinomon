@@ -5,8 +5,11 @@ import Card from "../../components/Inventory/Card";
 import Cyndaquil from "../../Images/cyndaquil.png";
 import PokeballMenu from "../../components/PokeballMenu";
 import Header from "../../components/Header/Header";
-
+import axios from "axios";
 import "./styles.css";
+
+
+
 
 const cards = [
     {
@@ -36,9 +39,30 @@ const cards = [
 ]
 
 const Inventory = () => {
+    const [apiCyn, setApiCyn] = React.useState();
+    const [apiToto, setApiToto] = React.useState();
+    const [apiPika, setApiPika] = React.useState();
+    const [apiChiko, setApiChiko] = React.useState();
+    let loaded = false;
+    const [list, setList] = React.useState([]);
+    React.useEffect(async () => {
+        try {
+            setApiCyn(await axios.get("https://pokeapi.co/api/v2/pokemon/cyndaquil").data)
+            setApiToto(await axios.get("https://pokeapi.co/api/v2/pokemon/totodile/").data);
+            setApiPika(await axios.get("https://pokeapi.co/api/v2/pokemon/pikachu/").data);
+            setApiChiko(await axios.get("https://pokeapi.co/api/v2/pokemon/chikorita/").data);
+        } catch {
+            console.log("Não foi possível fazer a requisição da api")
+        } finally {
+            console.log(apiCyn)
+            setList([apiCyn, apiToto, apiChiko, apiPika]);
+        }
+
+
+    }, []);
     return (
         <div className="entire-page-inventory">
-             <Header color="#011F4B"/>
+            <Header color="#011F4B" />
             <div
                 style={{
                     height: "90 %",
@@ -73,7 +97,7 @@ const Inventory = () => {
                 </div>
 
             </div>
-            <PokeballMenu/>
+            <PokeballMenu />
 
         </div >
     );

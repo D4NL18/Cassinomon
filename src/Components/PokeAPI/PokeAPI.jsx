@@ -35,7 +35,7 @@ export default function PokeAPI(props) {
 
           });
         });
-    }, []);
+    });
 
     return null;
   
