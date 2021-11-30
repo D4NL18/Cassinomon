@@ -1,0 +1,82 @@
+.coinflip_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #F6BD20;
+}
+
+.coinflip_container_content {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coinflip_container_content_mainscreen {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE9AB;
+    margin: 0 5%;
+    border-radius: 10px;
+}
+
+.coinflip_container_content_mainscreen_left {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coinflip_container_content_mainscreen_right {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_coin_img{
+    width: 300px;
+    height: 300px;
+}
+
+.coinflip_container_content_mainscreen_question {
+    width: 60%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.coinflip_container_content_mainscreen_input {
+    height: 10%;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.coinflip_container_content_mainscreen_input:focus{
+    outline: none;
+}
+
+.coinflip_container_content_friend_list{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #FFE9AB;
+    overflow-y: auto;
+}

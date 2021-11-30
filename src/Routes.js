@@ -1,13 +1,15 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Roulette from './Views/Roulette/Roulette'
-import Profile from './Views/Perfil/Profile'
-import BlackJack from './Views/BlackJack'
-import Inventory from './Views/Inventory'
-import Dice from './Views/Dice/Dice'
-import Home from './Views/Home/Home'
-import Login from './Views/Login/Login'
-import Register from './Views/Registro/Registro'
+import Coinflip from "./Views/Coinflip/index";
+import Loja from "./Views/Loja/index";
+import Roulette from './Views/Roulette/Roulette';
+import Profile from './Views/Perfil/Profile';
+import BlackJack from './Views/BlackJack';
+import Inventory from './Views/Inventory';
+import Dice from './Views/Dice/Dice';
+import Home from './Views/Home/Home';
+import Login from './Views/Login/Login';
+import Register from './Views/Registro/Registro';
 
 function Router() {
     return (
@@ -22,6 +24,8 @@ function Router() {
             <Route exact path="/Dice" component={Dice}></Route>
             <Route exact path="/Roulette" component={Roulette}></Route>
             <Route exact path="/Profile" component={Profile}></Route>
+            <Route exact path = "/coinflip" component={Coinflip}></Route>
+            <Route exact path = "/loja" component={Loja}></Route>
         </Switch>
     </BrowserRouter>
       </div>
