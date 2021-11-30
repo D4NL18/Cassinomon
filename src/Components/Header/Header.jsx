@@ -1,5 +1,6 @@
 import ButtonLoginRegister from '../ButtonLoginRegister/ButtonLoginRegister'
 import XpMoneyBox from '../XpMoneyBox/XpMoneyBox'
+import Drawer from '../Drawer/Drawer'
 import './Header.css'
 
 export default function Header(props) {
@@ -15,7 +16,7 @@ export default function Header(props) {
                     <ButtonLoginRegister type="Login" text="Login" />
                     <ButtonLoginRegister type="Registro" text="Registre-se" />
                 </div>
-
+                <Drawer />
             </div>
         </>
     )
