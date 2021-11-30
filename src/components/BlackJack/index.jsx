@@ -273,8 +273,10 @@ const Game = (props) => {
         standEvent={stand}
         resetEvent={resetGame}
       />
-      <Hand title={`Dealer's Hand (${dealerScore})`} cards={dealerCards} />
-      <Hand title={`Your Hand (${userScore})`} cards={userCards} />
+      <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
+        <Hand title={`Your Hand (${userScore})`} cards={userCards} />
+        <Hand title={`Dealer's Hand (${dealerScore})`} cards={dealerCards} />
+      </div>
     </>
   );
 }

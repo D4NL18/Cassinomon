@@ -1,6 +1,7 @@
 import React from 'react'
 import CoinflipImg from '../../Images/coinflip.png'
-import Header from '../../Components/Header/Header'
+import Header from '../../components/Header/Header'
+import PokeballMenu from "../../components/PokeballMenu";
 import './Profile.css'
 
 export default function Profile() {
@@ -33,6 +34,8 @@ export default function Profile() {
                     </div>
                 </div>
                 <div className="friends-list" />
+                <PokeballMenu/>
+
             </div>
         </>
     )

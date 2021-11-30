@@ -1,10 +1,12 @@
 import React from 'react'
-import LobbyButton from '../../Components/LobbyButton/LobbyButton'
+import LobbyButton from '../../components/LobbyButton/LobbyButton'
 import BlackjackImg from '../../Images/blackjack.png'
 import RoletaImg from '../../Images/roleta.png'
 import DiceImg from '../../Images/dice.png'
 import CoinflipImg from '../../Images/coinflip.png'
-import Header from '../../Components/Header/Header'
+import Header from '../../components/Header/Header'
+import PokeballMenu from "../../components/PokeballMenu";
+
 import './Home.css'
 
 
@@ -26,6 +28,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+                <PokeballMenu/>
 
             </div>
         </>

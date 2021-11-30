@@ -1,4 +1,4 @@
-.entire-page {
+.entire-page-blackjack {
     width: 100vw;
     height: 110vh;
     background-color: #94D5FF;
@@ -8,8 +8,5 @@
     width: 100%;
     height: 10%;
 }
-.game-div {
-    height: 90% !important;
-    justify-content: end;
-}
+
 

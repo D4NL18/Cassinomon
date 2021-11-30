@@ -8,6 +8,7 @@ import LocalGroceryStoreOutlinedIcon from '@mui/icons-material/LocalGroceryStore
 import BackpackOutlinedIcon from '@mui/icons-material/BackpackOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import "./styles.css"
+import { useHistory } from "react-router-dom";
 
 const StyledSpeedDial = styled(SpeedDial)(({ theme }) => ({
     position: 'absolute',
@@ -23,16 +24,17 @@ const StyledSpeedDial = styled(SpeedDial)(({ theme }) => ({
 
 const actions = [
     { icon: <LocalGroceryStoreOutlinedIcon />, name: 'Loja', route: "Lojinha" },
-    { icon: <BackpackOutlinedIcon />, name: 'Inventário', route: "Inventário" },
-    { icon: <PersonOutlineOutlinedIcon />, name: 'Perfil', route: "Perfil" },
+    { icon: <BackpackOutlinedIcon />, name: 'Inventário', route: "/Inventory" },
+    { icon: <PersonOutlineOutlinedIcon />, name: 'Perfil', route: "/Profile" },
 ];
 
 
 export default function PlaygroundSpeedDial() {
+    const history = useHistory();
 
     return (
-        <Box sx={{ transform: 'translateZ(0px)', flexGrow: 1 }}>
-            <Box sx={{ position: 'absolute', bottom: 3, height: 100 }}>
+        <Box sx={{ transform: 'translateZ(0px)', flexGrow: 1, position: "absolute", bottom: 3 }}>
+            <Box sx={{ height: 100 }}>
                 <StyledSpeedDial
                     ariaLabel="menuPokeball"
                     icon={<CatchingPokemonIcon />}
@@ -40,15 +42,19 @@ export default function PlaygroundSpeedDial() {
                     styleOverride
 
                 >
-                    {actions.map((action) => (
-                        <SpeedDialAction
-                            key={action.name}
-                            icon={action.icon}
-                            tooltipTitle={action.name}
-                            tooltipPlacement="bottom"
-                            onClick={() => console.log(action.route)}
-                        />
-                    ))}
+                    {actions.map((action) => {
+                        return (
+                                <SpeedDialAction
+                                    key={action.name}
+                                    icon={action.icon}
+                                    tooltipTitle={action.name}
+                                    tooltipPlacement="bottom"
+                                    onClick={() => history.push(action.route)}
+                                />
+                        )
+                    }
+                    )
+                    }
                 </StyledSpeedDial>
             </Box>
         </Box>

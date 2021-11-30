@@ -1,12 +1,7 @@
-.entire-page {
+.entire-page-inventory {
     width: 100vw;
     height: 100vh;
     background-color: #03396C;
-}
-.navbar {
-    background-color: #011F4B;
-    width: 100%;
-    height: 10%;
 }
 .content-div {
     height: 90%;

@@ -2,7 +2,10 @@ import React from "react";
 import { Typography } from "@material-ui/core";
 
 import Card from "../../components/Inventory/Card";
-import Cyndaquil from "../../assets/cyndaquil.png";
+import Cyndaquil from "../../Images/cyndaquil.png";
+import PokeballMenu from "../../components/PokeballMenu";
+import Header from "../../components/Header/Header";
+
 import "./styles.css";
 
 const cards = [
@@ -34,8 +37,8 @@ const cards = [
 
 const Inventory = () => {
     return (
-        <div className="entire-page">
-            <div className="navbar" />
+        <div className="entire-page-inventory">
+             <Header color="#011F4B"/>
             <div
                 style={{
                     height: "90 %",
@@ -70,6 +73,8 @@ const Inventory = () => {
                 </div>
 
             </div>
+            <PokeballMenu/>
+
         </div >
     );
 };
