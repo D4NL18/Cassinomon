@@ -1,7 +1,7 @@
 import React from 'react'
 import CoinflipImg from '../../Images/coinflip.png'
-import Header from '../../components/Header/Header'
-import PokeballMenu from "../../components/PokeballMenu";
+import Header from '../../Components/Header/Header'
+import PokeballMenu from "../../Components/PokeballMenu";
 import './Profile.css'
 
 export default function Profile() {

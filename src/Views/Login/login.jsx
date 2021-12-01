@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import { useHistory } from "react-router-dom";
-import Header from '../../components/Header/Header'
+import Header from '../../Components/Header/Header'
 import EmailIcon from '@mui/icons-material/Email';
 import LockIcon from '@mui/icons-material/Lock';
-import PokeballMenu from "../../components/PokeballMenu";
+import PokeballMenu from "../../Components/PokeballMenu";
 import './Login.css'
 
 export default function Login() {

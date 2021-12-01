@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Coinflip from "./Views/Coinflip/index";
-import Loja from "./Views/Loja/index";
+import Coinflip from "./Views/Coinflip/Coinflip";
+import Loja from "./Views/Loja/Loja";
 import Roulette from './Views/Roulette/Roulette';
 import Profile from './Views/Perfil/Profile';
 import BlackJack from './Views/BlackJack';

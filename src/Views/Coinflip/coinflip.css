@@ -70,13 +70,32 @@
     outline: none;
 }
 
+.coinflip_container_content_mainscreen_choice{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.coinflip_container_content_mainscreen_pikachu{
+    background-color: #F6BD20;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.coinflip_container_content_mainscreen_raichu{
+    background-color: #E04F00;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .coinflip_container_content_friend_list{
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 20%;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     background-color: #FFE9AB;
     overflow-y: auto;
 }

@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react'
-import LobbyButton from '../../components/LobbyButton/LobbyButton'
+import LobbyButton from '../../Components/LobbyButton/LobbyButton'
 import BlackjackImg from '../../Images/blackjack.png'
 import RoletaImg from '../../Images/roleta.png'
 import DiceImg from '../../Images/dice.png'
 import CoinflipImg from '../../Images/coinflip.png'
-import Header from '../../components/Header/Header'
-import PokeballMenu from "../../components/PokeballMenu";
+import Header from '../../Components/Header/Header'
+import PokeballMenu from "../../Components/PokeballMenu";
 
 import './Home.css'
 
