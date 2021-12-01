@@ -1,10 +1,10 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
 
-import Card from "../../components/Inventory/Card";
+import Card from "../../Components/Inventory/Card";
 import Cyndaquil from "../../Images/cyndaquil.png";
-import PokeballMenu from "../../components/PokeballMenu";
-import Header from "../../components/Header/Header";
+import PokeballMenu from "../../Components/PokeballMenu";
+import Header from "../../Components/Header/Header";
 import axios from "axios";
 import "./styles.css";
 

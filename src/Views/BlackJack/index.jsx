@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Game from "../../components/BlackJack";
-import Header from "../../components/Header/Header";
-import PokeballMenu from "../../components/PokeballMenu";
+import Game from "../../Components/BlackJack";
+import Header from "../../Components/Header/Header";
+import PokeballMenu from "../../Components/PokeballMenu";
 import "./styles.css";
 
 const BlackJack = () => {

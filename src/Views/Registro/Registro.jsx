@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useHistory } from "react-router-dom";
-import Header from '../../components/Header/Header'
-import PokeballMenu from "../../components/PokeballMenu";
+import Header from '../../Components/Header/Header'
+import PokeballMenu from "../../Components/PokeballMenu";
 import './Registro.css'
 
 export default function Registro() {
