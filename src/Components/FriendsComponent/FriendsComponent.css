@@ -1,0 +1,15 @@
+.entire-FriendsComponent {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+}
+
+.friendsName {
+    font-size: 16px;
+    padding: 0px 6px;
+    font-weight: 400;
+}
+
+/* .personIcon {
+
+} */

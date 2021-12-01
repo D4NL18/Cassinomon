@@ -1,0 +1,13 @@
+.bet-box-roulette-button {
+    margin: 20px;
+    width: 70%;
+    height: 40px;
+    border-radius: 10px !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.bet-bot-roulette-button-text {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'PRESS START 2P';
+}
