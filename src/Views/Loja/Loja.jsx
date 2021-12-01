@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Headder from "../../Components/Header/Header.jsx";
-import Sidelist from "../../Components/FriendsComponent/FriendsComponent.jsx";
-import Card from "../../Components/Inventory/Card.jsx";
+import Headder from "../../components/Header/Header.jsx";
+import Sidelist from "../../components/FriendsComponent/FriendsComponent.jsx";
+import Card from "../../components/Inventory/Card.jsx";
 import Button from '@mui/material/Button';
-import PokeballMenu from "../../Components/PokeballMenu";
-import PokeAPI from '../../Components/PokeAPI/PokeAPI'
-import "./Loja.css";
+import PokeballMenu from "../../components/PokeballMenu";
+import PokeAPI from '../../components/PokeAPI/PokeAPI'
+import "./loja.css";
 
 const card = [
     {

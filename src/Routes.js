@@ -8,7 +8,7 @@ import BlackJack from './Views/BlackJack';
 import Inventory from './Views/Inventory';
 import Dice from './Views/Dice/Dice';
 import Home from './Views/Home/Home';
-import Login from './Views/Login/Login';
+import Login from './Views/Login/login';
 import Register from './Views/Registro/Registro';
 
 function Router() {

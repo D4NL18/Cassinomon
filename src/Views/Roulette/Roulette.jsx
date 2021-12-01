@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './Roulette.css'
 import { Wheel } from 'react-custom-roulette'
-import ButtonStart from '../../Components/ButtonStart/ButtonStart';
-import Header from '../../Components/Header/Header'
-import PokeballMenu from "../../Components/PokeballMenu";
+import ButtonStart from '../../components/ButtonStart/ButtonStart';
+import Header from '../../components/Header/Header'
+import PokeballMenu from "../../components/PokeballMenu";
 
 
 const data = [

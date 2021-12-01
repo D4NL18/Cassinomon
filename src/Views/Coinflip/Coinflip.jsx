@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Headder from "../../Components/Header/Header.jsx";
-import Sidelist from "../../Components/FriendsComponent/FriendsComponent.jsx";
+import Headder from "../../components/Header/Header.jsx";
+import Sidelist from "../../components/FriendsComponent/FriendsComponent.jsx";
 import Button from '@mui/material/Button';
 import Pikachu from "../../Images/coinflip.png";
 import Raichu from "../../Images/raichu.png";
-import PokeballMenu from "../../Components/PokeballMenu";
-import "./Coinflip.css";
+import PokeballMenu from "../../components/PokeballMenu";
+import "./coinflip.css";
 
 function Coinflip() {
 
