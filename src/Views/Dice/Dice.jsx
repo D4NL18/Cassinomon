@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import ButtonStart from '../../components/ButtonStart/ButtonStart';
+import ButtonStart from '../../Components/ButtonStart/ButtonStart';
 import Dice from 'react-dice-roll'
-import DiceButtonBall from '../../components/DiceButtonBall/DiceButtonBall'
-import Header from '../../components/Header/Header'
-import PokeballMenu from "../../components/PokeballMenu";
+import DiceButtonBall from '../../Components/DiceButtonBall/DiceButtonBall'
+import Header from '../../Components/Header/Header'
+import PokeballMenu from "../../Components/PokeballMenu";
 
 import './Dice.css'
 

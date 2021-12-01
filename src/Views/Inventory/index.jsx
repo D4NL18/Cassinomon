@@ -1,8 +1,7 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
 
-import Card from "../../components/Inventory/Card";
-import Cyndaquil from "../../Images/cyndaquil.png";
+import Card from "../../Components/Inventory/Card";
 import PokeballMenu from "../../components/PokeballMenu";
 import PokeAPI from '../../components/PokeAPI/PokeAPI'
 import Header from "../../components/Header/Header";

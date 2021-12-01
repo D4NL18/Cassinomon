@@ -8,10 +8,6 @@
     background-color: #03396C;
 }
 
-.loja_container h1{
-    color: white;
-}
-
 .loja_container_content {
     display: flex;
     flex-direction: row;
@@ -49,13 +45,38 @@
     overflow-x: auto;
 }
 
+.loja_container_content_mainscreen_store *{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.loja_container_content_mainscreen_store_display{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-right: 30px;
+}
+
+.loja_container_content_mainscreen_store * img{
+    margin: 0;
+    height: 150px;
+    width: 150px;
+    border: none;
+}
+
 .loja_container_content_friend_list{
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 20%;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     background-color: #E7EFF6;
     overflow-y: auto;
 }

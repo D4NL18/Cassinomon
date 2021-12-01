@@ -23,7 +23,7 @@ const StyledSpeedDial = styled(SpeedDial)(({ theme }) => ({
 }));
 
 const actions = [
-    { icon: <LocalGroceryStoreOutlinedIcon />, name: 'Loja', route: "Lojinha" },
+    { icon: <LocalGroceryStoreOutlinedIcon />, name: 'Loja', route: "/loja" },
     { icon: <BackpackOutlinedIcon />, name: 'Inventário', route: "/Inventory" },
     { icon: <PersonOutlineOutlinedIcon />, name: 'Perfil', route: "/Profile" },
 ];
