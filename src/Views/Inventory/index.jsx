@@ -4,8 +4,8 @@ import { Typography } from "@material-ui/core";
 import Card from "../../components/Inventory/Card";
 import Cyndaquil from "../../Images/cyndaquil.png";
 import PokeballMenu from "../../components/PokeballMenu";
+import PokeAPI from '../../components/PokeAPI/PokeAPI'
 import Header from "../../components/Header/Header";
-import axios from "axios";
 import "./styles.css";
 
 
@@ -14,55 +14,38 @@ import "./styles.css";
 const cards = [
     {
         type: "eletric",
-        image: Cyndaquil,
-        name: "Cyndaquil",
-        description: "Pokemon de fogo brabissimo, um dos iniciais mais balas que tem"
+        name: "Pikachu",
+        pokedex_num: 25,
+        description: "Pokemon do tipo elétrico, protagonista de pokemon"
     },
     {
         type: "fire",
-        image: Cyndaquil,
         name: "Cyndaquil",
+        pokedex_num: 155,
         description: "Pokemon de fogo brabissimo, um dos iniciais mais balas que tem"
     },
     {
         type: "leaf",
-        image: Cyndaquil,
-        name: "Cyndaquil",
-        description: "Pokemon de fogo brabissimo, um dos iniciais mais balas que tem"
+        name: "Chikorita",
+        pokedex_num: 152,
+
+        description: "Pokemon de planta que tem seus momentos na série"
     },
     {
         type: "water",
-        image: Cyndaquil,
-        name: "Cyndaquil",
-        description: "Pokemon de fogo brabissimo, um dos iniciais mais balas que tem"
+        name: "Totodile",
+        pokedex_num: 158,
+        description: "Pokemon de água, um dos favoritos de todos nos jogos de DS"
     },
 ]
 
 const Inventory = () => {
-    const [apiCyn, setApiCyn] = React.useState();
-    const [apiToto, setApiToto] = React.useState();
-    const [apiPika, setApiPika] = React.useState();
-    const [apiChiko, setApiChiko] = React.useState();
-    let loaded = false;
-    const [list, setList] = React.useState([]);
-    React.useEffect(async () => {
-        try {
-            setApiCyn(await axios.get("https://pokeapi.co/api/v2/pokemon/cyndaquil").data)
-            setApiToto(await axios.get("https://pokeapi.co/api/v2/pokemon/totodile/").data);
-            setApiPika(await axios.get("https://pokeapi.co/api/v2/pokemon/pikachu/").data);
-            setApiChiko(await axios.get("https://pokeapi.co/api/v2/pokemon/chikorita/").data);
-        } catch {
-            console.log("Não foi possível fazer a requisição da api")
-        } finally {
-            console.log(apiCyn)
-            setList([apiCyn, apiToto, apiChiko, apiPika]);
-        }
+    const [imgs, setImgs] = React.useState("");
 
-
-    }, []);
     return (
         <div className="entire-page-inventory">
             <Header color="#011F4B" />
+            <PokeAPI setImgs={setImgs} />
             <div
                 style={{
                     height: "90 %",
@@ -90,7 +73,7 @@ const Inventory = () => {
                             type={pokemon.type}
                             name={pokemon.name}
                             description={pokemon.description}
-                            image={pokemon.image}
+                            image={imgs[pokemon.pokedex_num - 1]}
                             key={index}
                         />
                     ))}
