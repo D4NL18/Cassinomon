@@ -34,7 +34,6 @@ function Coinflip() {
                 setMoney(parseInt(money) - parseInt(bet));
             }
 
-            setChoice(" ");
         }
     }
 
